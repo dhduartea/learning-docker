@@ -129,9 +129,9 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 Si tienes preguntas sobre este repositorio o el curso:
 
-- 📧 Email: [tu-email@ejemplo.com]
-- 🐙 GitHub: [@tu-usuario]
-- 💼 LinkedIn: [tu-perfil-linkedin]
+- 📧 Email: [dhduartea@gmail.com]
+- 🐙 GitHub: [@dhduartea]
+- 💼 LinkedIn: [dhduartea]
 
 ---
 
