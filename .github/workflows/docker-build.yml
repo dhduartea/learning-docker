@@ -1,0 +1,70 @@
+name: 🐳 Docker Build & Test
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+      
+    - name: 🐳 Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+      
+    - name: 🔍 Lint Dockerfiles
+      uses: hadolint/hadolint-action@v3.1.0
+      with:
+        dockerfile: |
+          **/Dockerfile
+          **/*.Dockerfile
+        format: sarif
+        output-file: hadolint-report.sarif
+        
+    - name: 🧪 Build Docker images
+      run: |
+        echo "🔨 Building Docker images..."
+        
+        # Build 03_05 exercise
+        if [ -f "03_05/Dockerfile" ]; then
+          echo "Building 03_05..."
+          docker build -t learning-docker:03_05 ./03_05
+        fi
+        
+        # Build 03_06 exercise
+        if [ -f "03_06/Dockerfile" ]; then
+          echo "Building 03_06..."
+          docker build -t learning-docker:03_06 ./03_06
+        fi
+        
+        # Build 03_08 exercise
+        if [ -f "03_08/web-server.Dockerfile" ]; then
+          echo "Building 03_08..."
+          docker build -f ./03_08/web-server.Dockerfile -t learning-docker:03_08 ./03_08
+        fi
+        
+        # Build 04_03 exercise
+        if [ -f "04_03_after/Dockerfile" ]; then
+          echo "Building 04_03_after..."
+          docker build -t learning-docker:04_03_after ./04_03_after
+        fi
+        
+        echo "✅ All images built successfully!"
+        
+    - name: 📊 Upload SARIF file
+      uses: github/codeql-action/upload-sarif@v2
+      if: always()
+      with:
+        sarif_file: hadolint-report.sarif
+        
+    - name: 🧹 Cleanup
+      if: always()
+      run: |
+        echo "🧹 Cleaning up Docker images..."
+        docker system prune -f
+        docker image prune -f

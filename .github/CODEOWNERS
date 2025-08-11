@@ -1,0 +1,17 @@
+# Global owners
+* @tu-usuario
+
+# Docker files
+**/Dockerfile @tu-usuario
+**/*.Dockerfile @tu-usuario
+
+# Documentation
+*.md @tu-usuario
+docs/ @tu-usuario
+
+# Scripts
+**/*.bash @tu-usuario
+**/*.sh @tu-usuario
+
+# GitHub workflows
+.github/ @tu-usuario
