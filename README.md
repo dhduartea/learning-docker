@@ -129,9 +129,9 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 Si tienes preguntas sobre este repositorio o el curso:
 
-- 📧 Email: [dhduartea@gmail.com]
-- 🐙 GitHub: [@dhduartea]
-- 💼 LinkedIn: [dhduartea]
+- 📧 Email: [dhduartea@gmail.com](mailto:dhduartea@gmail.com)
+- 🐙 GitHub: [@dhduartea](https://github.com/dhduartea)
+- 🐳 Docker Hub: [@dhduartea](https://hub.docker.com/u/dhduartea)
 
 ---
 

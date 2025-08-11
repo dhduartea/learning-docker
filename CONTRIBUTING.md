@@ -31,7 +31,7 @@ Para nuevas funcionalidades o mejoras:
 ```bash
 # Haz fork del repositorio en GitHub
 # Luego clona tu fork localmente
-git clone https://github.com/tu-usuario/learning-docker.git
+git clone https://github.com/dhduartea/learning-docker.git
 cd learning-docker
 ```
 

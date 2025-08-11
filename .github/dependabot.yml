@@ -7,9 +7,9 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 10
     reviewers:
-      - "tu-usuario"
+      - "dhduartea"
     assignees:
-      - "tu-usuario"
+      - "dhduartea"
     commit-message:
       prefix: "chore"
       include: "scope"
