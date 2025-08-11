@@ -37,12 +37,12 @@ Exercise Files/
 ### Prerrequisitos
 - Docker Desktop instalado
 - Conocimientos básicos de línea de comandos
-- Editor de código (VS Code recomendado)
+- Editor de código (VS Code o Cursor  recomendados)
 
 ### Inicio Rápido
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/learning-docker.git
+   git clone https://github.com/dhduartea/learning-docker.git
    cd learning-docker
    ```
 

@@ -38,7 +38,7 @@ cd learning-docker
 #### 2. Configura el Repositorio Remoto
 ```bash
 # Agrega el repositorio original como upstream
-git remote add upstream https://github.com/original-usuario/learning-docker.git
+git remote add upstream https://github.com/dhduartea/learning-docker.git
 
 # Verifica los remotos
 git remote -v
